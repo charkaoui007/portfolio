@@ -3,6 +3,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from "react-router-dom";
 import Cours from "./components/Cours";
+import SocialFlow from "./components/SocialFlow";
 
 import ProfileImage from "./components/ProfileImage";
 import { Card } from 'primereact/card';
@@ -27,12 +28,12 @@ function App() {
         {/* En-tête */}
         <header className="header">
           <ProfileImage />
-          <h1>Et. Anass CHARKAOUI</h1>
-          <h2>Etudiant Universitaire</h2>
+          <h1> Anass CHARKAOUI</h1>
+          <h2>Élève ingénieur</h2>
         </header>
 
         {/* Menu de navigation */}
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light ">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
               <Link to="/" className="nav-link">
@@ -82,7 +83,9 @@ function App() {
 
         {/* Pied de page */}
         <footer className="footer">
-          <p ><strong>charkaoui1.anass@gmail.com</strong> </p>
+        <SocialFlow />
+   
+        
         </footer>
         
       </div>
